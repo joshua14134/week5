@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Music Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Mood Player 🎧</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+  <main class="container">
+    <label for="moodSelect">Choose Mood:</label>
+    <select id="moodSelect">
+      <option value="calm">Calm</option>
+      <option value="happy">Happy</option>
+      <option value="dark">Dark</option>
+    </select>
+    <div class="buttons">
+      <button id="playBtn">▶️ Play</button>
+      <button id="pauseBtn">⏸️ Pause</button>
+    </div>
+    <canvas id="visualizer" width="800" height="200"></canvas>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
